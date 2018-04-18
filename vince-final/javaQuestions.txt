@@ -1,0 +1,10 @@
+1. What is correct syntax for main method of a java class?
+2. What is the size of short variable?
+3. What is the default value of double variable?
+4. Which of the following is false about String?
+5. What is class variable?
+6. Is it necessary that each try block must be followed by a finally block?
+7. Which of the following is not a keyword in java?
+8. Can constructor be inherited?
+9. What is Abstraction?
+10. This is the parent of Error and Exception classes:
