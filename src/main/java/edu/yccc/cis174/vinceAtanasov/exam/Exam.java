@@ -8,8 +8,6 @@ import java.util.List;
 
 public interface Exam {
 
-	public String getUserName();
-
 	public List<Question> loadQuestions();
 
 	public List<Answer> loadAnswers();
@@ -17,8 +15,10 @@ public interface Exam {
 	public List<String> loadCorrectAnswers();
 
 	public float calculateGrade();
-
-	public List<String> exam();
+	
+	public String getNextQuestion();
+	
+	public String getNextAnswer();
 
 	public void writeExamResult(String userName, float grade);
 }
