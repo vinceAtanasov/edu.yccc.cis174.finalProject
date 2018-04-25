@@ -1,4 +1,4 @@
-package edu.yccc.cis174.vinceAtanasov.slack;
+package edu.yccc.cis174.vinceAtanasov.exam;
 
 import net.gpedro.integrations.slack.SlackApi;
 import net.gpedro.integrations.slack.SlackMessage;

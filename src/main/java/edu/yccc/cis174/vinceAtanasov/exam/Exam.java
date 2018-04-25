@@ -7,7 +7,7 @@ package edu.yccc.cis174.vinceAtanasov.exam;
 import java.util.List;
 
 public interface Exam {
-	
+
 	public String getUserName();
 
 	public List<Question> loadQuestions();
@@ -15,8 +15,6 @@ public interface Exam {
 	public List<Answer> loadAnswers();
 
 	public List<String> loadCorrectAnswers();
-
-	public void describe();
 
 	public float calculateGrade();
 

@@ -90,10 +90,6 @@ public class JavaExam implements Exam {
 		return correctAnswers;
 	}
 
-	public void describe() {
-		// TODO Auto-generated method stub
-
-	}
 
 	public float calculateGrade() {
 		// TODO Auto-generated method stub
