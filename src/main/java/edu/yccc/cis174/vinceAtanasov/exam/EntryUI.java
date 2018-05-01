@@ -251,16 +251,18 @@ public class EntryUI {
 		lblGrade_1.setBounds(628, 327, 69, 26);
 		frmEntryUI.getContentPane().add(lblGrade_1);
 		
-		JButton btnWriteReport = new JButton("Write report");
+		final JButton btnWriteReport = new JButton("Write report");
 		btnWriteReport.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				// Condition when the radio button for Java exam is selected.
 				if (rdbtnJava.isSelected()) {
 					jEx.writeExamResult(userName, jEx.calculateGrade());
+					btnWriteReport.disable();
 				}
 				// Condition when the radio button for Chemistry exam is selected.
 				if (rdbtnChemistry.isSelected()) {
 					chEx.writeExamResult(userName, chEx.calculateGrade());
+					btnWriteReport.disable();
 					
 				}
 			}
