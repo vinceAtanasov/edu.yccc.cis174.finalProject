@@ -175,7 +175,7 @@ public class EntryUI {
 				}
 			}
 		});
-		btnSubmit.setBounds(119, 377, 141, 35);
+		btnSubmit.setBounds(108, 377, 141, 35);
 		frmEntryUI.getContentPane().add(btnSubmit);
 
 		JButton btnSendReport = new JButton("Send report");
@@ -189,7 +189,7 @@ public class EntryUI {
 				ss.sendMessage("#slack_test", slackUserName, userName + "'s" + " grade is " + lblGrade.getText() + ".");
 			}
 		});
-		btnSendReport.setBounds(278, 377, 164, 35);
+		btnSendReport.setBounds(267, 377, 164, 35);
 		frmEntryUI.getContentPane().add(btnSendReport);
 
 		final JButton btnStart = new JButton("Start");
@@ -250,6 +250,23 @@ public class EntryUI {
 		JLabel lblGrade_1 = new JLabel("Grade:");
 		lblGrade_1.setBounds(628, 327, 69, 26);
 		frmEntryUI.getContentPane().add(lblGrade_1);
+		
+		JButton btnWriteReport = new JButton("Write report");
+		btnWriteReport.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				// Condition when the radio button for Java exam is selected.
+				if (rdbtnJava.isSelected()) {
+					jEx.writeExamResult(userName, jEx.calculateGrade());
+				}
+				// Condition when the radio button for Chemistry exam is selected.
+				if (rdbtnChemistry.isSelected()) {
+					chEx.writeExamResult(userName, chEx.calculateGrade());
+					
+				}
+			}
+		});
+		btnWriteReport.setBounds(446, 377, 147, 35);
+		frmEntryUI.getContentPane().add(btnWriteReport);
 
 	}
 }

@@ -1,7 +1,9 @@
 package edu.yccc.cis174.vinceAtanasov.exam;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -117,9 +119,22 @@ public class ChemistryExam implements Exam {
 		return grade;
 	}
 
+	// Method that writes a file. We'are passing arguments for user name and grade.
 	public void writeExamResult(String userName, float grade) {
-		// TODO Auto-generated method stub
-
+		// Creating empty BufferedWriter out.
+		BufferedWriter out = null;
+		try {
+			// Creating FileWriter with the path for the text file.
+			FileWriter fStream = new FileWriter("Examresults.txt", true);
+			out = new BufferedWriter(fStream);
+			// Writing out the user name and the result to a text file.
+			out.write(" ");
+			out.write(userName + " ");
+			out.write(grade + ";" + "\n");
+			out.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	// Method that gets the next question from the list with questions.
