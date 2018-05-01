@@ -250,25 +250,27 @@ public class EntryUI {
 		JLabel lblGrade_1 = new JLabel("Grade:");
 		lblGrade_1.setBounds(628, 327, 69, 26);
 		frmEntryUI.getContentPane().add(lblGrade_1);
-		
+
 		final JButton btnWriteReport = new JButton("Write report");
 		btnWriteReport.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				// Condition when the radio button for Java exam is selected.
 				if (rdbtnJava.isSelected()) {
+					// Calling the method that writes the student's score to a file.
 					jEx.writeExamResult(userName, jEx.calculateGrade());
-					btnWriteReport.disable();
+					// Disabling the Write Report button when is clicked once.
+					btnWriteReport.setEnabled(false);
 				}
 				// Condition when the radio button for Chemistry exam is selected.
 				if (rdbtnChemistry.isSelected()) {
+					// Calling the method that writes the student's score to a file.
 					chEx.writeExamResult(userName, chEx.calculateGrade());
-					btnWriteReport.disable();
-					
+					// Disabling the Write Report button when is clicked once.
+					btnWriteReport.setEnabled(false);
 				}
 			}
 		});
 		btnWriteReport.setBounds(446, 377, 147, 35);
 		frmEntryUI.getContentPane().add(btnWriteReport);
-
 	}
 }

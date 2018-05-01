@@ -125,7 +125,7 @@ public class ChemistryExam implements Exam {
 		BufferedWriter out = null;
 		try {
 			// Creating FileWriter with the path for the text file.
-			FileWriter fStream = new FileWriter("Examresults.txt", true);
+			FileWriter fStream = new FileWriter("ExamResults.txt", true);
 			out = new BufferedWriter(fStream);
 			// Writing out the user name and the result to a text file.
 			out.write(" ");
