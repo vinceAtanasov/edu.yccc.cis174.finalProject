@@ -1,5 +1,5 @@
 A) Mercury; B) Copper; C) Silver; D) Iron;
-A) Neither a definite shape nor definite volume; B) A definite volume but no definite shape; C) A definite shape but no volume; D) Definite shape and volume;
+A) Undefined shape or volume; B) Defined volume but undefined shape; C) Defined shape but no volume; D) Defined shape and volume;
 A) Compound; B) Solution; C) Solid; D) Element;
 A) Nonreactive; B) Unable to melt; C) Soft enough to cut with knife;
 A) A solution; B) An element; C) A chemical; D) A catalyst;
