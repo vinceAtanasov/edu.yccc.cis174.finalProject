@@ -1,4 +1,7 @@
 package edu.yccc.cis174.vinceAtanasov.exam;
+/**
+ * @author Vince
+ */
 
 import java.io.BufferedWriter;
 import java.io.File;

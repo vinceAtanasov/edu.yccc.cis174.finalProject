@@ -1,7 +1,14 @@
 package edu.yccc.cis174.vinceAtanasov.exam;
 /**
- * Vince
- * This project is to create a program that gives exams to the user by using interface.
+ * This is my final project which is upgraded version of the Exam application. The five acceptance criteria are:
+ * 1. Taking input through UI;
+ * 2. Reading files;
+ * 3. Integration with slack;
+ * 4. Using interface;
+ * 5. Writing to a file.
+ * 
+ * @author Vince
+ * 
  */
 
 import java.util.List;
@@ -15,9 +22,9 @@ public interface Exam {
 	public List<String> loadCorrectAnswers();
 
 	public float calculateGrade();
-	
+
 	public String getNextQuestion();
-	
+
 	public String getNextAnswer();
 
 	public void writeExamResult(String userName, float grade);

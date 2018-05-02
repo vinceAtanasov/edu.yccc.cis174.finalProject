@@ -4,13 +4,10 @@ import net.gpedro.integrations.slack.SlackApi;
 import net.gpedro.integrations.slack.SlackMessage;
 
 /**
- * First pass integration with slack.
- * 
  * 
  * @author Vince
  *
  */
-
 
 public class SlackService {
 	// #integration webhook url. Create your own channel and add the webhook app.
