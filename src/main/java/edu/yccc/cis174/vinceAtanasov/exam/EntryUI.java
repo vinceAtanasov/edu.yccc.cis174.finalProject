@@ -32,10 +32,9 @@ public class EntryUI {
 	// Creating JavaExam and ChemistryExam instances.
 	private JavaExam jEx = new JavaExam();
 	private ChemistryExam chEx = new ChemistryExam();
-
 	/**
 	 * Launch the application.
-	 */
+	 */  
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
